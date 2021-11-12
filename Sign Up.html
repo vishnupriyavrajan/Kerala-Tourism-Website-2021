@@ -35,22 +35,24 @@
         <div class= "col-lg-4" ></div>
      
       <div class="col-lg-3  myMargin">
-        <form class="row g-3">
+        <form class="row g-3" action="log In.html" onsubmit="return validate()">
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
             <input type="email" class="form-control" id="inputEmail4">
           </div>
           <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="password"  onkeyup="strength();" class="form-control" id="inputPassword4"><span id="msg">Strength</span>
+            <label for="perror" id="perror"></label>
           </div>
           <div class="col-12">
             <label for="inputAddress" class="form-label">Address</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
           </div>
           <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="Phone Number" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="Phonenumber" placeholder="Phone Number">
+            <label for="perror" id="nerror"></label>
           </div>
           <div class="col-md-6">
             <label for="inputCity" class="form-label">City</label>
@@ -82,5 +84,6 @@
       </div>
       <div class="col-lg-4"></div>
     </div>
+    <script src="pass.js"></script>
 </body>
 </html>
